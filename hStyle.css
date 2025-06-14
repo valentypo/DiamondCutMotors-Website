@@ -1,0 +1,521 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.backVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+header {
+    background-color: #272727;
+    color: #ffffff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    z-index: 99;
+}
+
+header img{
+    margin: 0.5em;
+    width: 9em;
+}
+
+footer {
+    width: 100%;
+    background-color: #0a0a0a;
+    color: #cccccc;
+    padding: 8px 0;
+    text-align: center;
+    clear: both;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container img {
+    height: auto;
+    max-height: 6em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 10px 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ff7a21;
+    border-radius: 6px;
+}
+
+nav .Login{
+    width: 100px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #575757;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+}
+
+nav ul li button.Login {
+    background: transparent;
+    border: 2px solid #575757;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: background-color 0.6s;
+    overflow: hidden;
+}
+
+nav ul li button.Login:hover {
+    background-color: #ffe057;
+    color: #383734;
+}
+
+.maincontent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 50vh;
+    flex-direction: row;
+}
+
+.tagline {
+    flex: 1;
+    font-family: 'Poppins', Courier, monospace;
+    margin-right: 20px;
+    border-radius: 6px;
+    display: flex;
+    color: white;
+    position: relative;
+    transform: translateY(0);
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tagline h1{
+    font-size: 3.5vw;
+    font-weight: 900;
+    margin: 0;
+}
+
+.tagline h2{
+    font-size: 1.5vw;
+    font-weight: 500;
+    margin: 0;
+}
+
+.carousel {
+    flex: 1;
+    position: relative;
+    border-radius: 6px;
+    backdrop-filter: blur(10px);
+    max-height: 45vh;
+    max-width: 40vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel h2 {
+    font-family: 'Poppins', 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    padding-left: 1em;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.carousel-inner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-height: 300px;
+}
+
+.carousel-item img {
+    align-items: center;
+    width: auto;
+    height: 28vh;
+    object-fit: cover;
+}
+
+.carousel-item.active img {
+    width: auto;
+    height: 28vh;
+    display: block;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.soldBox {
+    height: 30vh;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    backdrop-filter: blur(10px);
+    margin: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 150px;
+}
+
+.gallery {
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    margin-top: auto;
+    background: transparent;
+}
+
+.gallery h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vw;
+    margin-bottom: 20px;
+}
+
+.gallery-wrapper {
+    overflow: hidden;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.gallery-container {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item {
+    flex: 0 0 auto;
+    width: 20%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.gallery-item p {
+    font-size: 1em;
+    color: #ddd;
+}
+
+.gallery-item .description,
+.gallery-item .price {
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .maincontent {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    .tagline {
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .tagline ul{
+        margin: auto;
+    }
+
+    .tagline h1 {
+        font-size: 2.5em;
+    }
+
+    .tagline h2 {
+        font-size: 1.2em;
+    }
+
+    .carousel {
+        max-width: 80vw;
+        max-height: 40vh;
+        margin-bottom: 20px;
+    }
+
+    .carousel h2 {
+        font-size: 1.5em;
+        padding: 10px 0;
+    }
+
+    .carousel-item {
+        margin: auto;
+    }
+
+    .carousel-item img {
+        height: 24vh;
+        padding-bottom: 6em;
+
+    }
+
+    .carousel-item.active img {
+        height: 24vh;
+        padding-bottom: 6em;
+    }
+
+    .soldBox {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .gallery {
+        max-width: 90vw;
+        padding: 10px;
+    }
+
+    .gallery h2 {
+        font-size: 1.5em;
+    }
+
+    .gallery-item {
+        width: 30%;
+    }
+
+    .gallery-item img {
+        max-height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header{
+        display: flex;
+    }
+
+    .container {
+        width: 90vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container img {
+        margin: 0;
+        height: auto;
+        max-height: 3.5em;
+    }
+
+    .container button {
+        width: 5em;
+        height: 2em;
+    }
+    
+    h1 {
+        margin: 0;
+        height: auto;
+        max-height: 2em;
+    }
+
+    a {
+        font-size: 8px;
+    }
+
+    nav ul li a {
+        padding: 0.5px;
+    }
+
+    nav ul li button.Login {
+        width: 4em;
+        height: 2em;
+        font-size: 0.8em;
+        padding: 5px;
+    }
+
+    footer p {
+        margin: auto;
+        width: 90vw;
+        font-size: 0.5em;
+    }
+
+    .maincontent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tagline {
+        margin-top: 2em;
+        text-align: center;
+        width: 100%;
+    }
+
+    .tagline ul {
+        margin-right: 2.2em;
+    }
+
+
+    .tagline h1 {
+        font-size: 1.2em; 
+    }
+
+    .tagline h2 {
+        font-size: 1em;
+        margin: 1em 0;
+    }
+
+    .carousel {
+        max-width: 85vw;
+        max-height: 25vh;
+        margin-bottom: 20px;
+    }
+
+    .carousel h2 {
+        font-size: 1em;
+        padding: 5px 0;
+    }
+
+    .carousel-item img {
+        height: 12vh;
+        object-fit: contain;
+        padding-bottom: 15em;
+    }
+
+    .carousel-item.active img {
+        height: 12vh;
+        object-fit: contain;
+        padding-bottom: 15em;
+    }
+
+    .soldBox {
+        height: auto;
+        width: 95vw;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .gallery {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .gallery-item {
+        width: 45%;
+        margin: 5px;
+        padding: 5px;
+        text-align: center;
+        background-color: #2c2c2c;
+    }
+
+    .gallery-item img {
+        max-height: 100px;
+        object-fit: contain;
+        width: 100%;
+    }
+}

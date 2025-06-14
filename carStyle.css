@@ -1,0 +1,480 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.backVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+header {
+    background-color: #272727;
+    color: #ffffff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    z-index: 99;
+}
+
+header img{
+    margin: 0.5em;
+    width: 9em;
+}
+
+footer {
+    width: 100%;
+    background-color: #0a0a0a;
+    color: #cccccc;
+    padding: 8px 0;
+    text-align: center;
+    clear: both;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container img {
+    height: auto;
+    max-height: 6em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 10px 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ff7a21;
+    border-radius: 6px;
+}
+
+.nav ul li a.Login:hover {
+    background-color: #ffe057;
+    border-radius: 6px;
+}
+
+nav .Login{
+    width: 100px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #575757;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+}
+
+nav ul li button.Login {
+    background: transparent;
+    border: 2px solid #575757;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: background-color 0.6s;
+    overflow: hidden;
+}
+
+nav ul li button.Login:hover {
+    background-color: #ffe057;
+    color: #383734;
+}
+
+.maincontents {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    padding: 2em 0;
+}
+
+.carousel {
+    position: relative;
+    border-radius: 20px;
+    background-color: #0a0a0a;
+    max-height: 50vh;
+    max-width: 50vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2em;
+    margin: auto;
+}
+
+.carousel h2 {
+    font-family: 'Poppins', 'Times New Roman', Times, serif;
+    color: #cccccc;
+    font-size: 2em;
+    text-align: center;
+}
+
+.carousel-inner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-height: 300px;
+}
+
+.carousel-item img {
+    width: auto;
+    height: auto;
+    max-height: 31vh;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.galleries {
+    display: flex;
+    flex-direction: column;
+}
+
+.partnerBrands{
+    display: flex;
+    margin: auto;
+    padding: 2em;
+}
+
+.soldBox,
+.soldBoxSecond {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    margin: auto;
+    border-radius: 20px;
+    margin-bottom: 2em;
+    padding-bottom: 4em;
+    background-color: #0a0a0a;
+    flex: 1 0 auto;
+}
+
+.gallery,
+.gallery-second {
+    width: 100%;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    margin: auto;
+    background: transparent;
+}
+
+.gallery h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vw;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.gallery-wrapper,
+.gallery-wrapper-second {
+    overflow: hidden;
+    width: 95%;
+    scroll-behavior: smooth;
+}
+
+.gallery-container,
+.gallery-container-second {
+    display: flex;
+    transition: transform .3s ease-in-out;
+    scroll-behavior: smooth;
+}
+
+
+.gallery-item,
+.gallery-item-second {
+    flex: 0 0 auto;
+    width: 20%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .3s ease-in-out;
+}
+
+.gallery-item:hover,
+.gallery-item-second:hover {
+    background-color: #813d10;
+    scale: 1.1;
+    border-radius: 100px;
+}
+
+.dragging {
+    cursor: -webkit-grabbing;
+}
+
+.gallery-item img,
+.gallery-item-second img {
+    width: 100%;
+    height: auto;
+    max-height: 7em;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.gallery-item p,
+.gallery-item-second p {
+    font-size: 0.8em;
+    color: #ddd;
+}
+
+.gallery-item .description,
+.gallery-item .price,
+.gallery-item-second .description,
+.gallery-item-second .price {
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+button.prev, button.next,
+button.prev-second, button.next-second {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    z-index: 1;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev-second {
+    left: 10px;
+}
+
+button.next-second {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+
+    header{
+        display: flex;
+    }
+
+    .container {
+        width: 90vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container img {
+        margin: 0;
+        height: auto;
+        max-height: 3.5em;
+    }
+
+    .container button {
+        width: 5em;
+        height: 2em;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    .nav-list li {
+        margin: 5px 0;
+    }
+
+    .nav-list li a {
+        padding: 10px 20px;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        margin: 0;
+        height: auto;
+        max-height: 2em;
+    }
+
+    a {
+        font-size: 8px;
+    }
+
+    nav ul li a {
+        padding: 0.5px;
+    }
+
+    nav ul li button.Login {
+        width: 4em;
+        height: 2em;
+        font-size: 0.8em;
+        padding: 5px;
+    }
+
+    footer p {
+        margin: auto;
+        width: 90vw;
+        font-size: 0.5em;
+    }
+
+    .maincontent {
+        margin: 2vh;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .maincontent h1,
+    .maincontent h2 {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .maincontent img {
+        width: 3em;
+        height: auto;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    .carousel {
+        max-height: 40vh;
+        max-width: 80vw;
+    }
+
+    .carousel h2{
+        padding-top: 3.5em;
+        font-size: 1.5em;
+    }
+
+    .carousel-item img {
+        max-height: 20vh;
+    }
+
+.gallery h2{
+    font-size: 1.5em;
+}
+
+    .gallery-item,
+    .gallery-item-second {
+        width: 48%;
+        margin: 1%; 
+        padding: 5px;
+    }
+
+    .gallery-item img,
+    .gallery-item-second img {
+        max-height: 15vh;
+    }
+
+    .gallery-wrapper,
+    .gallery-wrapper-second {
+        width: 100%;
+    }
+
+    button.prev,
+    button.next,
+    button.prev-second,
+    button.next-second {
+        padding: 5px;
+        font-size: 1em;
+    }
+}

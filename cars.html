@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Diamond Cut Motors [Home Page]</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="assets/DCMTransparent.png" alt="company logo">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#cars">Cars</a></li>
+                    <li><a href="showroom.html">Showroom</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><button class="Login" id="loginButton">Login</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <video autoplay loop muted plays-inline class="backVideo">
+        <source src="assets/BGDark.mp4">
+    </video>
+
+    <div class="maincontents">
+        <div class="partnerBrands">
+            <div class="carousel">
+                <h2>Partner Brands</h2>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/logos/porsche.png" alt="no img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/logos/benz.png" alt="no img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/logos/bmwLogo.png" alt="no img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/logos/lexus.png" alt="no img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/logos/RollsRoyce.png" alt="no img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/logos/audiLogo.png" alt="no img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/logos/mazda.png" alt="no img">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" onclick="prevSlide()"><</button>
+                <button class="carousel-control-next" onclick="nextSlide()">></button>
+            </div>
+        </div>
+
+        <div class="galleries">
+            <div class="soldBox">
+                <div class="gallery">
+                    <h2>New Cars</h2>
+                    <div class="gallery-wrapper">
+                        <div class="gallery-container">
+                            <div class="gallery-item">
+                                <img src="assets/cars/audi/audiR8-2023.png" alt="no img">
+                                <p class="description">2023 Audi R8</p>
+                                <p class="price">468.000 $</p>
+                                <p class="brand">Brand : Audi</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/cars/audi/audiRS6.png" alt="no img">
+                                <p class="description">Audi RS6</p>
+                                <p class="price">458.000 $</p>
+                                <p class="brand">Brand : Audi</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/cars/audi/audiRS-Q8.png" alt="no img">
+                                <p class="description">Audi RS Q8</p>
+                                <p class="price">336.000 $</p>
+                                <p class="brand">Brand : Audi</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/cars/bmw/M4-2022-coupe.png" alt="no img">
+                                <p class="description">BMW M4 Competition</p>
+                                <p class="price">578.000 $</p>
+                                <p class="brand">Brand : BMW</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/cars/bmw/bmwX4.png" alt="no img">
+                                <p class="description">All New 2024 BMW X4</p>
+                                <p class="price">476.000 $</p>
+                                <p class="brand">Brand : BMW</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/cars/benz/amgGTS.png" alt="no img">
+                                <p class="description">Mercedez Benz AMG GT S</p>
+                                <p class="price">674.000 $</p>
+                                <p class="brand">Brand : Mercedes Benz</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/cars/benz/G-wagon.png" alt="no img">
+                                <p class="description">Mercedez Benz G63</p>
+                                <p class="price">635.000 $</p>
+                                <p class="brand">Brand : Mercedes Benz</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/cars/lexus/lexusLS350F.png" alt="no img">
+                                <p class="description">Lexus LS 350F</p>
+                                <p class="price">374.000 $</p>
+                                <p class="brand">Brand : Lexus</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/cars/lexus/lexusRX2024.png" alt="no img">
+                                <p class="description">2024 Lexus RX</p>
+                                <p class="price">435.000 $</p>
+                                <p class="brand">Brand : Lexus</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/cars/porsche/porsche911blk.png" alt="no img">
+                                <p class="description">Porsche 911 Black Edition</p>
+                                <p class="price">554.000 $</p>
+                                <p class="brand">Brand : Porsche</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/cars/porsche/porsche911.png" alt="no img">
+                                <p class="description">Porsche 911</p>
+                                <p class="price">514.000 $</p>
+                                <p class="brand">Brand : Porsche</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/cars/RR/rollsRoyceGhost.png" alt="no img">
+                                <p class="description">Rolls Royce Ghost</p>
+                                <p class="price">835.000 $</p>
+                                <p class="brand">Brand : Rolls Royce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="prev"><</button>
+                    <button class="next">></button>
+                </div>    
+            </div>
+        
+            <div class="soldBoxSecond">
+                <div class="gallery">
+                    <h2>Used Cars</h2>
+                    <div class="gallery-wrapper-second">
+                        <div class="gallery-container-second">
+                            <div class="gallery-item">
+                                <img src="assets/cars/audi/audiR8.png" alt="no img">
+                                <p class="description">2016 Audi R8</p>
+                                <p class="price">145.000 $</p>
+                                <p class="brand">Brand : Audi</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/cars/audi/audiQ5.png" alt="no img">
+                                <p class="description">2021 Audi Q5</p>
+                                <p class="price">112.000 $</p>
+                                <p class="brand">Brand : Audi</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/cars/bmw/bmwX5.png" alt="no img">
+                                <p class="description">2020 BMW X5</p>
+                                <p class="price">206.000 $</p>
+                                <p class="brand">Brand : BMW</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/cars/bmw/bmwX6.png" alt="no img">
+                                <p class="description">2022 BMW X6</p>
+                                <p class="price">215.000 $</p>
+                                <p class="brand">Brand : BMW</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/cars/bmw/bmwM3-2018.png" alt="no img">
+                                <p class="description">2018 BMW M3</p>
+                                <p class="price">165.000 $</p>
+                                <p class="brand">Brand : BMW</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/cars/benz/eClass.png" alt="no img">
+                                <p class="description">2018 Mercedes Benz E200</p>
+                                <p class="price">120.000 $</p>
+                                <p class="brand">Brand : Mercedes Benz</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/cars/benz/sClass.png" alt="no img">
+                                <p class="description">2020 Mercedes Benz S200</p>
+                                <p class="price">148.000 $</p>
+                                <p class="brand">Brand : Mercedes Benz</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/cars/lexus/lexusRC300-2018.png" alt="no img">
+                                <p class="description">2018 Lexus RC300</p>
+                                <p class="price">195.000 $</p>
+                                <p class="brand">Brand : Lexus</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/cars/porsche/porsche1.png" alt="no img">
+                                <p class="description">2016 Porsche Cayman</p>
+                                <p class="price">210.000 $</p>
+                                <p class="brand">Brand : Porsche</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/cars/porsche/porsche2.png" alt="no img">
+                                <p class="description">2017 Porsche Cayman</p>
+                                <p class="price">225.000 $</p>
+                                <p class="brand">Brand : Porsche</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/cars/porsche/porschePanamera.png" alt="no img">
+                                <p class="description">2018 Porsche Panamera</p>
+                                <p class="price">235.000 $</p>
+                                <p class="brand">Brand : Porsche</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/cars/RR/rollsRoycePhantom.png" alt="no img">
+                                <p class="description">2015 Rolls Royce Phantom</p>
+                                <p class="price">325.000 $</p>
+                                <p class="brand">Brand : Rolls Royce</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <button class="prev-second"><</button>
+                    <button class="next-second">></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Diamond Cut Motors | Designed By Steven Valentino Taslim | 2024</p>
+    <footer>
+    <script src="carScript.js"></script>
+</body>
+</html>

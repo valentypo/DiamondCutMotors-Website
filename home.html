@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Diamond Cut Motors [Home Page]</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="assets/DCMTransparent.png" alt="company logo">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="cars.html">Cars</a></li>
+                    <li><a href="showroom.html">Showroom</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><button class="Login" id="loginButton">Login</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <video autoplay loop muted plays-inline class="backVideo">
+        <source src="assets/BGDark.mp4">
+    </video>
+
+
+    <div class="maincontent">
+        <div class="tagline">
+            <ul>
+                <h1>Luxury Like Never Seen Before</h1>
+                <h2>Only on Diamond Car Motors.</h2>
+        </div>
+            </ul>
+        <div class="carousel">
+            <h2>Featured Cars</h2>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/cars/porsche/porscheCayenne.png" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/cars/RR/rollsRoycePhantom.png" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/cars/porsche/porsche911GT3RS.png" alt="Image 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/cars/lexus/lexusRX2024.png" alt="Image 4">
+                </div>
+            </div>
+            <button class="carousel-control-prev" onclick="prevSlide()"><</button>
+            <button class="carousel-control-next" onclick="nextSlide()">></button>
+        </div>
+    </div>
+
+    <div class="soldBox">
+        <div class="gallery">
+            <h2>Top Tier Cars</h2>
+            <div class="gallery-wrapper">
+                <div class="gallery-container">
+                    <div class="gallery-item">
+                        <img src="assets/cars/RR/rollsRoyceGhost.png" alt="Car 1">
+                        <p class="description">Rolls Royce Ghost</p>
+                        <p class="price">835.000 $</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/cars/RR/rollsRoycePhantom.png" alt="Car 2">
+                        <p class="description">Rolls Royce Phantom</p>
+                        <p class="price">788.000 $</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/cars/porsche/porsche911blk.png" alt="no img">
+                        <p class="description">Porsche 911 Black Edition</p>
+                        <p class="price">554.000 $</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/cars/porsche/porsche911.png" alt="no img">
+                        <p class="description">Porsche 911</p>
+                        <p class="price">514.000 $</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/cars/benz/amgGTS.png" alt="Car 1">
+                        <p class="description">Mercedez Benz AMG GT S</p>
+                        <p class="price">674.000 $</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/cars/benz/G-wagon.png" alt="Car 2">
+                        <p class="description">Mercedez Benz G63</p>
+                        <p class="price">635.000 $</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/cars/bmw/M4-2022-coupe.png" alt="no img">
+                        <p class="description">BMW M4 Competition Coupe</p>
+                        <p class="price">578.000 $</p>
+                    </div>
+                </div>
+            </div>
+            <button class="prev"><</button>
+            <button class="next">></button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Diamond Cut Motors | Designed By Steven Valentino Taslim | 2024</p>
+    <footer>
+    <script src="hScript.js"></script>
+</body>
+
+</html>

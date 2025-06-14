@@ -1,0 +1,272 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #272727;
+    color: #ffffff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    z-index: 99;
+}
+
+header img {
+    margin: 0.5em;
+    width: 9em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 10px 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ff7a21;
+    border-radius: 6px;
+}
+
+.nav ul li a.Login:hover {
+    background-color: #ffe057;
+    border-radius: 6px;
+}
+
+nav .Login {
+    width: 100px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #575757;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+}
+
+nav ul li button.Login {
+    background: transparent;
+    border: 2px solid #575757;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: background-color 0.6s;
+    overflow: hidden;
+}
+
+nav ul li button.Login:hover {
+    background-color: #ffe057;
+    color: #383734;
+}
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container img {
+    height: auto;
+    max-height: 6em;
+}
+
+.backVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+footer {
+    width: 100%;
+    background-color: #0a0a0a;
+    color: #cccccc;
+    padding: 10px 0;
+    text-align: center;
+    clear: both;
+    position: relative;
+}
+
+input[type="text"],
+select,
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+button[type="button"] {
+    background-color: #04aa6d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+button[type="button"]:hover {
+    background-color: #0a5a10;
+    color: #76f17c;
+}
+
+.container2 {
+    color: #cccccc;
+    border-radius: 30px;
+    background-color: #181818;
+    padding: 1.5em;
+    width: 80%;
+    max-width: 40vw;
+    margin: 2em auto;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container2 button {
+    font-weight: 800;
+    background-color: rgb(64, 150, 31);
+    margin-top: 10px;
+    border-radius: 200px;
+}
+
+.container2 h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 0px 2px 6px rgb(0, 0, 0);
+}
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container img {
+        margin: 0;
+        height: auto;
+        max-height: 3.5em;
+    }
+
+    .container button {
+        width: 5em;
+        height: 2em;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    .nav-list li {
+        margin: 5px 0;
+    }
+
+    .nav-list li a {
+        padding: 10px 20px;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .container2 h1 {
+        text-align: center;
+        font-size: 2em;
+        color: #fff;
+        text-shadow: 0px 2px 6px rgb(0, 0, 0);
+    }
+
+    .container2 label {
+        font-size: 0.8em;
+    }
+
+}
+
+@media (max-width: 480px) {
+    h1 {
+        margin: 0;
+        height: auto;
+        max-height: 2em;
+    }
+
+    a{
+        font-size: 8px;
+    }
+
+    nav ul li a {
+        padding: 0.5px;
+    }
+    
+    nav ul li button.Login {
+        width: 4em;
+        height: 2em;
+        font-size: 0.8em;
+        padding: 5px;
+    }
+
+    footer p{
+        margin: auto;
+        width: 90vw;
+        font-size: 0.5em;
+    }
+}

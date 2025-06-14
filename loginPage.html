@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Diamond Cut Motors [About Us]</title>
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <div class="container">
+                <img src="assets/DCMTransparent.png" alt="company logo">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="cars.html">Cars</a></li>
+                        <li><a href="showroom.html">Showroom</a></li>
+                        <li><a href="aboutUs.html">About Us</a></li>
+                        <li><button class="Login" id="loginButton">Login</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <video autoplay loop muted plays-inline class="backVideo">
+            <source src="assets/BGDark.mp4">
+        </video>
+
+            <div class="container2" id="loginContainer">
+                <h1>Login</h1>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your name...">
+        
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Your email...">
+                    
+                    <label for="phonenumber">Phone Number</label>
+                    <input type="text" name="number" id="number" placeholder="Your phone number...">
+
+                    <label for="Password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Your password...">
+        
+                    <label for="confirmpassword">Confirmation Password</label>
+                    <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm your password...">
+        
+                    <div class="box">
+                        <input type="checkbox" name="agreement" id="agreement">
+                        <label for="agreement">I agree to register.</label>
+                    </div>
+        
+                    <button type="button" onclick="validateData()">
+                        Create Account!
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <p>Diamond Cut Motors | Designed By Steven Valentino Taslim | 2024</p>
+        </footer>
+    </div>
+
+    <script src="loginScript.js"></script>
+</body>
+
+</html>
