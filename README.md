@@ -42,5 +42,7 @@ cd DiamondCutMotors-Website
 
 ## 🙋‍♂️ Author
 Steven Valentino Taslim
+
 📧 stevenv2605@gmail.com
+
 🔗 www.linkedin.com/in/steven-vt
